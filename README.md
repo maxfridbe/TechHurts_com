@@ -18,9 +18,11 @@ different design instead.
 
 | File | What it is |
 |---|---|
-| `index.html` | Home: the four ideals, privacy summary, TTS Runner spotlight |
+| `index.html` | Home: the four ideals, privacy summary, TTS Runner spotlight, Vibecoding |
 | `software.html` | The software library |
-| `ttsrunner.html` | TTS Runner for Android — detail page, permissions table, benchmarks |
+| `vibecoding.html` | AndroidBase and GameBase — the base repos the software is built on |
+| `ttsrunner.html` | TTS Runner for Android — detail page, screenshots, permissions table, benchmarks |
+| `img/` | Screenshots, committed to this repo and served from this domain |
 | `privacy.html` | No telemetry, no background network use, no unexplained permissions |
 | `manifesto.html` | The four sentences, at length |
 | `tokens.html` | The crypto tip jar |
@@ -29,6 +31,20 @@ different design instead.
 | `CNAME` | Custom domain for GitHub Pages |
 | `.nojekyll` | Serve files as-is |
 | `.github/workflows/pages.yml` | Upload the repo root as a Pages artifact and deploy |
+
+## Screenshots
+
+`img/*.png` are the TTS Runner screenshots, downscaled to 360px wide from the
+1080x2340 originals in the app repo (`docs/screenshots/`) so the pages stay
+light. They are committed here rather than hot-linked, because loading images
+from another host would contradict the privacy page. To refresh them:
+
+```sh
+ffmpeg -y -i <source>.png -vf "scale=360:-1:flags=lanczos" img/ttsrunner-<name>.png
+```
+
+Every `<img>` carries explicit `width`/`height` so the page doesn't reflow as
+images load, and alt text describing what the screen shows.
 
 ## Publishing the tip-jar addresses
 

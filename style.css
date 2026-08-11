@@ -547,6 +547,42 @@ blockquote.slogan cite {
 }
 .footer .fine { color: #6b7b8b; font-size: 9px; }
 
+/* ---------- screenshot gallery ---------- */
+.shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 12px 0;
+}
+.shots figure {
+  margin: 0;
+  flex: 1 1 118px;
+  max-width: 150px;
+  text-align: center;
+}
+.shots img,
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px inset #c0c0c0;
+  background: #0d1520;
+  box-sizing: border-box;
+}
+.shots figcaption {
+  font-size: 9px;
+  color: #4a5a6a;
+  padding-top: 3px;
+  letter-spacing: .3px;
+}
+.shots figcaption b { color: var(--navy); }
+.product .shot { padding: 0; border: 0; background: none; }
+.capnote {
+  font-size: 9px;
+  color: #6b7b8b;
+  margin: -6px 0 14px 0;
+}
+
 /* ---------- yes/no privacy list ---------- */
 ul.plist { list-style: none; margin: 0 0 10px 0; padding: 0; }
 ul.plist li {

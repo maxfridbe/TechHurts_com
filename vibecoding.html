@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibecoding &mdash; TechHurts.com</title>
+<meta name="description" content="AndroidBase and GameBase: build systems designed to be driven by an AI coding agent. Containerised Android builds, and one Rust crate that ships to four platforms.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23003366'/%3E%3Ctext x='8' y='12' font-family='Verdana' font-size='10' font-weight='bold' text-anchor='middle' fill='%23ffcc00'%3ET%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <span>
+      No sales team
+      <span class="sep">|</span> No call centre
+      <span class="sep">|</span> No account manager
+      <span class="sep">|</span> No mailing list
+    </span>
+    <span>
+      <a href="https://github.com/maxfridbe">GitHub</a>
+      <span class="sep">|</span>
+      <a href="tokens.html">Buy me a cup of tokens</a>
+    </span>
+  </div>
+
+  <div class="masthead">
+    <div class="brand">
+      <svg width="46" height="46" viewBox="0 0 46 46" role="img" aria-label="TechHurts logo">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#6ba3d6"/><stop offset="1" stop-color="#1d4a75"/>
+        </linearGradient></defs>
+        <rect x="1" y="1" width="44" height="44" rx="3" fill="url(#lg)" stroke="#12354f" stroke-width="2"/>
+        <rect x="6" y="9" width="34" height="24" rx="1" fill="#0d1520" stroke="#8fb6d8"/>
+        <path d="M11 20l5 4-5 4" fill="none" stroke="#33ff33" stroke-width="2"/>
+        <rect x="19" y="26" width="12" height="2" fill="#33ff33"/>
+        <rect x="17" y="35" width="12" height="4" fill="#12354f"/>
+      </svg>
+      <div>
+        <div class="wordmark">Tech<span class="hurts">Hurts</span>.com</div>
+        <div class="tag">SOFTWARE THAT DOES NOT PHONE HOME &nbsp;&#183;&nbsp; EST. WHENEVER</div>
+      </div>
+    </div>
+    <div class="quotebox">
+      <b>&#9758; The trick isn't the prompt.</b><br>
+      It is having a base solid enough that the agent only has to write the
+      interesting part.
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="software.html">Software</a>
+    <a href="vibecoding.html" class="here">Vibecoding</a>
+    <a href="ttsrunner.html">TTS Runner</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="manifesto.html">Manifesto</a>
+    <span class="grow"></span>
+    <a href="tokens.html" class="cta">Buy Me A Cup Of Tokens</a>
+  </div>
+
+  <div class="hero">
+    <div class="kicker">How The Software Gets Made</div>
+    <h1>Vibecoding needs a <em>base</em>.</h1>
+    <p class="sub">
+      An AI agent writing an app is not the hard part. Signing, versioning,
+      packaging and CI are the hard part &mdash; and they are the same every
+      time. So they were solved once, in two repositories, and now the agent
+      only writes the app.
+    </p>
+    <div class="btnrow">
+      <a class="btn gold big" href="https://github.com/maxfridbe/AndroidBase">AndroidBase &raquo;</a>
+      <a class="btn dark big" href="https://github.com/maxfridbe/GameBase">GameBase &raquo;</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="sidebar">
+      <div class="widget">
+        <div class="head">Navigation</div>
+        <div class="inner">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Library</a></li>
+            <li><a href="vibecoding.html">Vibecoding</a></li>
+            <li><a href="ttsrunner.html">TTS Runner for Android</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="manifesto.html">The Manifesto</a></li>
+            <li><a href="tokens.html">Buy Me A Cup Of Tokens</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="head">The Bases</div>
+        <div class="inner">
+          <ul>
+            <li><a href="https://github.com/maxfridbe/AndroidBase">AndroidBase</a><br>
+                <span class="stamp">containerised Android builds</span></li>
+            <li><a href="https://github.com/maxfridbe/GameBase">GameBase</a><br>
+                <span class="stamp">Bevy/Rust, four platforms</span></li>
+            <li><a href="https://maxfridbe.github.io/GameBase/">Play the GameBase demo</a><br>
+                <span class="stamp">runs in your browser</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="head">Host Requirements</div>
+        <div class="inner">
+          <b>AndroidBase:</b> podman or docker. That is the entire list.<br><br>
+          <span class="stamp">No JDK, no Gradle, no Android SDK, no NDK
+          installed on your machine. The container carries all of it.</span>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="head">Built On A Base</div>
+        <div class="inner">
+          <ul>
+            <li><a href="ttsrunner.html">TTS Runner</a><br>
+                <span class="stamp">cloned from AndroidBase</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <h2>Vibecoding <span class="small">&mdash; two repositories to start from</span></h2>
+
+      <p class="lead">
+        Let an agent start an Android app from nothing and it will spend its
+        effort on Gradle wrappers, SDK versions, keystores and a CI workflow
+        &mdash; and produce something that builds on one machine and nowhere
+        else. None of that is the app. It is the same scaffolding every project
+        needs, so it lives in a base repository instead, already working.
+      </p>
+
+      <blockquote class="slogan">
+        &ldquo;Copy the example closest to what you want, rename the identity,
+        run the build script.&rdquo;
+        <cite>&mdash; the whole workflow, both repositories</cite>
+      </blockquote>
+
+      <div class="barhead">AndroidBase &mdash; containerised Android builds</div>
+
+      <div class="product">
+        <div class="phead">
+          <span>&#9654; AndroidBase</span>
+          <span class="ver">GITHUB / FREE</span>
+        </div>
+        <div class="pbody">
+          <div class="ptext">
+            <p>
+              A generic Android build system where every APK is built inside a
+              Docker or Podman image. <b>The host machine never needs a JDK,
+              Gradle or the Android SDK</b> &mdash; the container carries all of
+              it, so a fresh laptop builds the same bytes as CI does.
+            </p>
+            <p>
+              Apps live in parallel, fully self-contained directories under
+              <code>apps/</code>, sharing nothing but the builder image and the
+              Gradle cache. That means two apps can use different languages, SDK
+              levels or plugins without interfering &mdash; and both
+              <code>build.sh</code> and GitHub Actions discover them
+              automatically, so adding an app never means editing the workflow.
+            </p>
+            <table class="spec">
+              <tr><th>Host needs</th><td>podman or docker, nothing else</td></tr>
+              <tr><th>Versioning</th><td>Derived from git, never hand-edited: <code>versionCode</code> is the commit count, <code>versionName</code> is <code>git describe</code>. Tag <code>v1.2.0</code> and that commit builds as <code>1.2.0</code>; three commits later it is <code>1.2.0-3-g&lt;sha&gt;</code>.</td></tr>
+              <tr><th>Signing</th><td>One shared keystore generated on first run, so signatures never change between machines and <code>adb install -r</code> upgrades always work. Swap in a private key via repo secrets when it matters.</td></tr>
+              <tr><th>CI</th><td>Discovers <code>apps/</code> into a build matrix, builds debug and release per app, verifies signatures with <code>apksigner</code>, and publishes a rolling <b>latest</b> pre-release plus permanent tagged releases.</td></tr>
+              <tr><th>Examples</th><td><code>hello-java</code>, <code>hello-kotlin</code>, and <code>hello-scala</code> &mdash; the last one showing how to get a JVM language the Android plugin does not support into an APK.</td></tr>
+            </table>
+            <a class="btn gold" href="https://github.com/maxfridbe/AndroidBase">Get AndroidBase &raquo;</a>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        The reason it is on this page: the conventions are uniform enough that an
+        agent can add a working, signed, versioned, CI-built app <em>without
+        touching the build system</em>. The prompt is genuinely as short as
+        &ldquo;copy <code>apps/hello-kotlin</code> to <code>apps/tip-calc</code>,
+        make it a tip calculator, verify with <code>./build.sh tip-calc</code>&rdquo;
+        &mdash; and the README spells out the ground rules an agent should follow,
+        which is the part most templates leave to guesswork.
+      </p>
+
+      <div class="notice grey">
+        <b>&#9758; This is what <a href="ttsrunner.html">TTS Runner</a> was cloned from.</b>
+        A 1.7B model running through llama.cpp with Vulkan and OpenCL kernels is
+        about as far from &ldquo;hello world&rdquo; as an Android app gets, and
+        the build system underneath it never had to change.
+      </div>
+
+      <div class="barhead">GameBase &mdash; one Rust crate, four platforms</div>
+
+      <div class="product">
+        <div class="phead">
+          <span>&#9654; GameBase</span>
+          <span class="ver">GITHUB / FREE</span>
+        </div>
+        <div class="pbody">
+          <div class="ptext">
+            <p>
+              A minimal <b>Bevy</b> starter game in Rust that already ships to
+              <b>Linux, Windows, Android and the browser</b> from a single Linux
+              development machine. The base game is a sphere you drive around a
+              3D arena &mdash; WASD to move, space and control to fly, drag to
+              orbit the camera, and solid pillars that knock you back with a
+              pitch-varied sound, which exists to prove the collision response
+              and the audio pipeline work on every target.
+            </p>
+            <p>
+              All the game code lives in <code>src/lib.rs</code>; a tiny
+              <code>src/main.rs</code> wraps it for desktop and the same crate
+              compiles as a <code>cdylib</code> for Android and to WebAssembly
+              for the browser. One codebase, four artifacts, no per-platform
+              forks.
+            </p>
+            <table class="spec">
+              <tr><th>Linux</th><td>Native <code>cargo run</code></td></tr>
+              <tr><th>Windows</th><td>Cross-compiled from Linux with MinGW &mdash; no Windows machine required</td></tr>
+              <tr><th>Android</th><td><code>cargo apk</code> builds the cdylib into an APK with no Java at all; a Gradle path exists as an alternative</td></tr>
+              <tr><th>Browser</th><td><code>wasm32</code> plus wasm-bindgen into a static site you can host anywhere</td></tr>
+              <tr><th>Releases</th><td><code>version.txt</code> is the single source of truth; CI builds all platforms and publishes a tagged GitHub Release, and deploys the browser build to Pages as a live demo</td></tr>
+            </table>
+            <a class="btn gold" href="https://maxfridbe.github.io/GameBase/">&#9654; Play the demo</a>
+            <a class="btn" href="https://github.com/maxfridbe/GameBase">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Cross-platform Rust games fail on details that are miserable to
+        rediscover, so GameBase writes them down and keeps them working: assets
+        are embedded into the binary because Android has no loose filesystem for
+        Bevy's asset server; Android audio needs a specific <code>cpal</code>
+        feature that links the right C++ runtime; the browser build needs a
+        random-number backend flag and a wasm-bindgen CLI matching the crate
+        version exactly. Each of those is an afternoon lost, once.
+      </p>
+      <p>
+        There is also a <code>setup_env.sh --check</code> that tells you what
+        your machine is missing before you build anything, and installs only the
+        missing pieces if you let it &mdash; because the worst part of trying a
+        new stack is discovering the requirements one error at a time.
+      </p>
+
+      <div class="barhead">Why any of this is on a website about not charging you</div>
+
+      <p>
+        The bases are the reason the <a href="software.html">software library</a>
+        can be free. Nobody is paying for the hours a project would otherwise
+        burn on packaging and release plumbing, because those hours were spent
+        once and are now a <code>git clone</code>. What is left to do on a new
+        project is the part that is actually interesting, which is the part that
+        gets done for its own sake.
+      </p>
+      <p>
+        Both repositories are public, both are free, and neither wants anything
+        from you. Fork them, strip the examples, keep the build system, and never
+        tell us about it &mdash; see <a href="manifesto.html">ideal number
+        four</a>.
+      </p>
+
+      <p style="text-align:center; margin-top:18px;">
+        <a class="btn gold big" href="https://github.com/maxfridbe/AndroidBase">AndroidBase &raquo;</a>
+        &nbsp;
+        <a class="btn big" href="https://github.com/maxfridbe/GameBase">GameBase &raquo;</a>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">Home</a> |
+    <a href="software.html">Software</a> |
+    <a href="vibecoding.html">Vibecoding</a> |
+    <a href="ttsrunner.html">TTS Runner</a> |
+    <a href="privacy.html">Privacy</a> |
+    <a href="manifesto.html">Manifesto</a> |
+    <a href="tokens.html">Tokens</a> |
+    <a href="https://github.com/maxfridbe">GitHub</a>
+    <div class="rule"></div>
+    Copyright &copy; TechHurts.com &mdash; do what you like with it.<br>
+    <span class="fine">
+      Best viewed at 1024x768 or better. This page contains no JavaScript, no
+      cookies, no trackers and no fonts loaded from somebody else's server.
+    </span>
+  </div>
+
+</div>
+</body>
+</html>
