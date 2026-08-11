@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TTS Runner for Android &mdash; TechHurts.com</title>
+<meta name="description" content="On-device text to speech for Android. Qwen3-TTS voice cloning and Supertonic 3. No server, no account, no audio leaves your phone.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23003366'/%3E%3Ctext x='8' y='12' font-family='Verdana' font-size='10' font-weight='bold' text-anchor='middle' fill='%23ffcc00'%3ET%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <span>
+      <a href="mailto:maxfridbe@gmail.com">maxfridbe@gmail.com</a>
+      <span class="sep">|</span> No sales team
+      <span class="sep">|</span> No call centre
+      <span class="sep">|</span> No account manager
+    </span>
+    <span>
+      <a href="https://github.com/maxfridbe">GitHub</a>
+      <span class="sep">|</span>
+      <a href="tokens.html">Buy me a cup of tokens</a>
+    </span>
+  </div>
+
+  <div class="masthead">
+    <div class="brand">
+      <svg width="46" height="46" viewBox="0 0 46 46" role="img" aria-label="TechHurts logo">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#6ba3d6"/><stop offset="1" stop-color="#1d4a75"/>
+        </linearGradient></defs>
+        <rect x="1" y="1" width="44" height="44" rx="3" fill="url(#lg)" stroke="#12354f" stroke-width="2"/>
+        <rect x="6" y="9" width="34" height="24" rx="1" fill="#0d1520" stroke="#8fb6d8"/>
+        <path d="M11 20l5 4-5 4" fill="none" stroke="#33ff33" stroke-width="2"/>
+        <rect x="19" y="26" width="12" height="2" fill="#33ff33"/>
+        <rect x="17" y="35" width="12" height="4" fill="#12354f"/>
+      </svg>
+      <div>
+        <div class="wordmark">Tech<span class="hurts">Hurts</span>.com</div>
+        <div class="tag">SOFTWARE THAT DOES NOT PHONE HOME &nbsp;&#183;&nbsp; EST. WHENEVER</div>
+      </div>
+    </div>
+    <div class="quotebox">
+      <b>&#9758; On-device means on-device.</b><br>
+      Your text and your voice never touch a network we control, because we
+      do not have one.
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="software.html">Software</a>
+    <a href="ttsrunner.html" class="here">TTS Runner</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="manifesto.html">Manifesto</a>
+    <span class="grow"></span>
+    <a href="tokens.html" class="cta">Buy Me A Cup Of Tokens</a>
+  </div>
+
+  <div class="hero">
+    <div class="kicker">Product No. 001</div>
+    <h1>TTS&nbsp;Runner reads anything aloud, <em>on your phone</em>.</h1>
+    <p class="sub">
+      Share text or an article link to it and it speaks, in a voice cloned from a
+      recording you made. No server, no account, no audio leaving the device.
+      Free, Apache-2.0, source included.
+    </p>
+    <div class="btnrow">
+      <a class="btn gold big" href="https://github.com/maxfridbe/vibe_android_tts_runner/releases">Download the APK &raquo;</a>
+      <a class="btn dark big" href="https://github.com/maxfridbe/vibe_android_tts_runner">View Source &raquo;</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="sidebar">
+      <div class="widget">
+        <div class="head">Navigation</div>
+        <div class="inner">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="software.html">Software Library</a></li>
+            <li><a href="ttsrunner.html">TTS Runner for Android</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="manifesto.html">The Manifesto</a></li>
+            <li><a href="tokens.html">Buy Me A Cup Of Tokens</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="head">Downloads</div>
+        <div class="inner">
+          <ul>
+            <li><a href="https://github.com/maxfridbe/vibe_android_tts_runner/releases">Latest release APK</a></li>
+            <li><a href="https://github.com/maxfridbe/vibe_android_tts_runner">Source code</a></li>
+            <li><a href="https://github.com/maxfridbe/vibe_android_tts_runner/issues">Bug reports</a></li>
+          </ul>
+          <span class="stamp">Models are downloaded inside the app, from
+          Hugging Face, when you ask for them.</span>
+        </div>
+      </div>
+      <div class="widget">
+        <div class="head">At A Glance</div>
+        <div class="inner">
+          <ul>
+            <li>Android arm64</li>
+            <li>Two TTS engines</li>
+            <li>Voice cloning on-device</li>
+            <li>31 languages (Supertonic)</li>
+            <li>Faster than real time</li>
+            <li>Works in aeroplane mode</li>
+            <li>Apache-2.0</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <h2>TTS Runner <span class="small">&mdash; on-device Qwen3-TTS and Supertonic 3</span></h2>
+
+      <p class="lead">
+        Two engines ship side by side. <b>Qwen3-TTS</b> (1.7B, llama.cpp) clones a
+        voice from a 10&ndash;20 second reference recording. <b>Supertonic 3</b>
+        (99M, ONNX Runtime) runs below real time &mdash; 5.7 seconds of audio in
+        2.7 seconds on a Galaxy S24 FE &mdash; across 31 languages. The speaker you
+        pick decides the engine; there is no hidden global setting and the app never
+        switches backend behind your back.
+      </p>
+
+      <div class="barhead">What it does</div>
+
+      <ul>
+        <li><b>Read anything you share.</b> Send it text or an article URL from any
+        app. Links are run through Readability &mdash; the Firefox Reader View
+        algorithm &mdash; so nav bars, cookie banners and related-article rails are
+        dropped and only the article is spoken. You see the extracted text in an
+        editor before a word is read.</li>
+        <li><b>Clone a voice.</b> Record one on the phone, trim it on a waveform,
+        or design one from a written description. A cloned voice can then be
+        refined on the phone to sound closer &mdash; a gradient-free search that
+        takes a few minutes.</li>
+        <li><b>Chats.</b> Conversations you keep: type a line, hear it immediately,
+        switch speaker mid-scene, drag lines into a different order, export the
+        whole thing as one track.</li>
+        <li><b>Jobs.</b> Compose and render to <code>Music/TTS Runner/*.m4a</code>
+        with the screen off, with per-job stats and re-runs in a different voice.</li>
+        <li><b>Local hosting.</b> Optionally serve your phone's voices as an
+        OpenAI-compatible <code>POST /v1/audio/speech</code> endpoint, with a
+        browser client on the same port. This is off until you turn it on, and it
+        serves your network, not ours.</li>
+        <li><b>Survives being killed.</b> Every generated chunk is cached, so a job
+        the OS kills mid-run continues from where it stopped rather than starting
+        over.</li>
+      </ul>
+
+      <div class="barhead">Privacy, specifically</div>
+
+      <p>
+        This is the part most text-to-speech apps get wrong, because the easy way
+        to build one is to send your text to somebody's API. We didn't.
+      </p>
+
+      <ul class="plist">
+        <li><span class="mark yes">&#10003;</span><b>Your text is processed on the phone.</b>
+            Generation runs locally in a native engine. Nothing is sent anywhere for
+            synthesis.</li>
+        <li><span class="mark yes">&#10003;</span><b>Your voice recordings stay on the phone.</b>
+            Cloning and refinement run on-device. No reference audio is uploaded.</li>
+        <li><span class="mark no">&#215;</span><b>No analytics SDK, no crash reporter, no ad ID.</b>
+            There is no account and no device identifier, so there is no profile of
+            you anywhere.</li>
+        <li><span class="mark no">&#215;</span><b>No background connections.</b>
+            The app touches the network in exactly three situations, all of them
+            started by you: downloading a model you chose, fetching an article link
+            you shared, and serving the local API if you switched it on.</li>
+      </ul>
+
+      <div class="barhead">Permissions, and why</div>
+
+      <p>
+        Every permission is listed here with the feature that needs it. If a
+        reason ever looks thin to you, deny it &mdash; the feature stops and the
+        rest of the app keeps working.
+      </p>
+
+      <table class="spec">
+        <tr><th>Microphone</th>
+            <td>Only to record a reference clip when <em>you</em> tap record for
+            voice cloning. Not used at any other time, and never in the
+            background.</td></tr>
+        <tr><th>Internet</th>
+            <td>Downloading the model you picked, fetching an article URL you
+            shared, and the local speech API if you enable it. Nothing else.</td></tr>
+        <tr><th>Notifications</th>
+            <td>The progress notification for a running generation job, which
+            Android requires for a foreground service.</td></tr>
+        <tr><th>Storage / folder access</th>
+            <td>Saving rendered audio where you asked for it, and the optional
+            backup folder that mirrors your speakers so a reinstall becomes a
+            restore. Scoped to the folder you choose.</td></tr>
+        <tr><th>Not requested</th>
+            <td>Contacts. Location. Call log. SMS. Camera. Calendar. Nearby
+            devices. Anything with &ldquo;precise&rdquo; in the name.</td></tr>
+      </table>
+
+      <div class="barhead">Measured speed</div>
+
+      <table class="spec">
+        <tr><th>Device / engine</th><th style="width:auto">Result</th></tr>
+        <tr><td>Galaxy S24 FE &mdash; Supertonic 3, CPU</td><td>5.7 s of audio in 2.7 s (RTF 0.47)</td></tr>
+        <tr><td>Galaxy Z Fold5 &mdash; Supertonic 3, CPU</td><td>33 s of audio in 16 s (RTF 0.48)</td></tr>
+        <tr><td>Galaxy S24 FE &mdash; Qwen3-TTS 1.7B, Vulkan</td><td>3.4 s of audio in ~21 s</td></tr>
+        <tr><td>Galaxy Z Fold5 &mdash; Qwen3-TTS 1.7B, CPU</td><td>3.4 s of audio in ~23 s</td></tr>
+      </table>
+
+      <p>
+        Backends are chosen per engine and per phone &mdash; CPU, OpenCL or Vulkan
+        for Qwen; CPU, NNAPI or XNNPACK for Supertonic. The app stars whichever it
+        measured fastest on your hardware and tells you why it picked it.
+      </p>
+
+      <div class="barhead">Getting it</div>
+
+      <table class="spec">
+        <tr><th>Install</th><td>Download the APK from the releases page and install it. There is no store listing, no sign-in and no licence key.</td></tr>
+        <tr><th>First run</th><td>Settings &rarr; download a model. Supertonic 3 is about 400&nbsp;MB and is the fast one. Then Speakers &rarr; Clone, Design, or restore from a backup folder.</td></tr>
+        <tr><th>Use</th><td>From any app: share text or a link &rarr; <em>Read aloud (TTS Runner)</em>. Or paste into the Jobs tab and press Listen.</td></tr>
+        <tr><th>Build it yourself</th><td>The build is fully containerised &mdash; the host needs only podman or docker, no Android SDK, NDK, JDK or Gradle.</td></tr>
+      </table>
+
+      <div class="notice">
+        <b>&#9758; Note on the model licences.</b> The app is Apache-2.0. The model
+        weights are downloaded at runtime from their own publishers and carry their
+        own licences &mdash; we do not redistribute them and we cannot relicense
+        them for you.
+      </div>
+
+      <p style="text-align:center; margin-top:18px;">
+        <a class="btn gold big" href="https://github.com/maxfridbe/vibe_android_tts_runner/releases">Download the APK &raquo;</a>
+        &nbsp;
+        <a class="btn big" href="tokens.html">&#9749; Buy Me A Cup Of Tokens</a>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="index.html">Home</a> |
+    <a href="software.html">Software</a> |
+    <a href="ttsrunner.html">TTS Runner</a> |
+    <a href="privacy.html">Privacy</a> |
+    <a href="manifesto.html">Manifesto</a> |
+    <a href="tokens.html">Tokens</a> |
+    <a href="https://github.com/maxfridbe">GitHub</a>
+    <div class="rule"></div>
+    Copyright &copy; TechHurts.com &mdash; do what you like with it.<br>
+    <span class="fine">
+      Best viewed at 1024x768 or better. This page contains no JavaScript, no
+      cookies, no trackers and no fonts loaded from somebody else's server.
+    </span>
+  </div>
+
+</div>
+</body>
+</html>
