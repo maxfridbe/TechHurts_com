@@ -28,7 +28,7 @@ different design instead.
 | `tokens.html` | The crypto tip jar |
 | `404.html` | Not-found page (uses absolute paths, since it is served from any URL) |
 | `style.css` | The entire design |
-| `CNAME` | Custom domain for GitHub Pages |
+| _(no `CNAME`)_ | Custom domain is **off** — see "Custom domain" below |
 | `.nojekyll` | Serve files as-is |
 | `.github/workflows/pages.yml` | Upload the repo root as a Pages artifact and deploy |
 
@@ -70,8 +70,18 @@ One-time setup in the repository settings:
 - **Settings → Pages → Custom domain:** `techhurts.com`, then tick
   *Enforce HTTPS* once the certificate is issued (it can take a few minutes).
 
-DNS for the apex domain — four `A` records and four `AAAA` records at your
-registrar:
+## Custom domain (techhurts.com) — currently disabled
+
+The `CNAME` file was removed on purpose. GitHub honours it as soon as it is
+committed and starts 301-redirecting the `github.io` URL to the custom domain —
+so while `techhurts.com` does not resolve to GitHub, committing it leaves the
+site with **no reachable URL at all**. Re-add it only once DNS is live:
+
+```sh
+echo techhurts.com > CNAME && git add CNAME && git commit -m "Enable custom domain" && git push
+```
+
+DNS for the apex — four `A` records and four `AAAA` records:
 
 ```
 A     @   185.199.108.153
@@ -83,6 +93,16 @@ AAAA  @   2606:50c0:8001::153
 AAAA  @   2606:50c0:8002::153
 AAAA  @   2606:50c0:8003::153
 CNAME www maxfridbe.github.io.
+```
+
+The apex **must** be A/AAAA records. A `CNAME` on the apex is invalid — the
+zone already has SOA and NS records there — and DNS providers reject or
+silently drop it. Only `www` may be a CNAME.
+
+Verify from the authoritative nameservers before re-adding the file:
+
+```sh
+getent ahosts techhurts.com     # must show 185.199.108-111.153
 ```
 
 ## Previewing locally
