@@ -24,7 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # enablement turns Pages on for the repo (source: GitHub Actions) on the
+      # first run, so this workflow is the only setup step needed.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       # The site is static HTML and CSS. There is no build step, because there
       # is no JavaScript and no Node.js anywhere in this repository.
