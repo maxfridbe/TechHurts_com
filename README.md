@@ -18,10 +18,12 @@ different design instead.
 
 | File | What it is |
 |---|---|
-| `index.html` | Home: the four ideals, privacy summary, TTS Runner spotlight, Vibecoding |
+| `index.html` | Home: the four ideals, privacy summary, product spotlights (TTS Runner, TechHurts Widgets, CodeFile), Vibecoding |
 | `software.html` | The software library |
 | `vibecoding.html` | AndroidBase and GameBase — the base repos the software is built on |
 | `ttsrunner.html` | TTS Runner for Android — detail page, screenshots, permissions table, benchmarks |
+| `widgets.html` | TechHurts Widgets for Android — six home-screen widgets (Weather, GOES East, Himawari, Calc, TV Remote, Timer) |
+| `codefile.html` | CodeFile for Android — native source code, data tree, Markdown and diff viewer with PDF export |
 | `img/` | Screenshots, committed to this repo and served from this domain |
 | `privacy.html` | No telemetry, no background network use, no unexplained permissions |
 | `manifesto.html` | The four sentences, at length |
@@ -34,13 +36,14 @@ different design instead.
 
 ## Screenshots
 
-`img/*.png` are the TTS Runner screenshots, downscaled to 360px wide from the
-1080x2340 originals in the app repo (`docs/screenshots/`) so the pages stay
-light. They are committed here rather than hot-linked, because loading images
-from another host would contradict the privacy page. To refresh them:
+`img/*.png` are the product screenshots (`ttsrunner-*.png`, `widgets-*.png`,
+`codefile-*.png`), downscaled to 360px wide from the 1080x2340 originals in each
+app repo so the pages stay light. They are committed here rather than
+hot-linked, because loading images from another host would contradict the
+privacy page. To refresh them:
 
 ```sh
-ffmpeg -y -i <source>.png -vf "scale=360:-1:flags=lanczos" img/ttsrunner-<name>.png
+ffmpeg -y -i <source> -vf "scale=360:-1:flags=lanczos" img/<product>-<name>.png
 ```
 
 Every `<img>` carries explicit `width`/`height` so the page doesn't reflow as

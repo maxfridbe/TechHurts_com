@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TechHurts.com &mdash; We make software. You install software.</title>
-<meta name="description" content="Free software with no subscription, no account, no telemetry and no relationship. TTS Runner for Android, on-device text to speech.">
-<meta name="keywords" content="free software, no subscription, no telemetry, privacy, android, tts, open source">
+<meta name="description" content="Free software with no subscription, no account, no telemetry and no relationship. TTS Runner, TechHurts Widgets, and CodeFile for Android.">
+<meta name="keywords" content="free software, no subscription, no telemetry, privacy, android, tts, widgets, code viewer, open source">
 <meta name="author" content="TechHurts">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23003366'/%3E%3Ctext x='8' y='12' font-family='Verdana' font-size='10' font-weight='bold' text-anchor='middle' fill='%23ffcc00'%3ET%3C/text%3E%3C/svg%3E">
@@ -58,6 +58,8 @@
     <a href="software.html">Software</a>
     <a href="vibecoding.html">Vibecoding</a>
     <a href="ttsrunner.html">TTS Runner</a>
+    <a href="widgets.html">Widgets</a>
+    <a href="codefile.html">CodeFile</a>
     <a href="privacy.html">Privacy</a>
     <a href="manifesto.html">Manifesto</a>
     <span class="grow"></span>
@@ -73,7 +75,7 @@
       quick call&quot;. No subscriptions, no relationship &mdash; that work for you?
     </p>
     <div class="btnrow">
-      <a class="btn gold big" href="ttsrunner.html">Get TTS Runner &raquo;</a>
+      <a class="btn gold big" href="software.html">Browse Software &raquo;</a>
       <a class="btn dark big" href="manifesto.html">Read The Manifesto &raquo;</a>
     </div>
   </div>
@@ -81,9 +83,10 @@
   <div class="newsbar">
     <span class="label">NEWS</span>
     <marquee scrollamount="3" behavior="scroll">
-      <b>NEW:</b> TTS Runner for Android &mdash; on-device Qwen3-TTS and Supertonic 3, no server, no account &nbsp;&#9679;&nbsp;
+      <b>NEW:</b> CodeFile for Android &mdash; native code, diff, Markdown &amp; tree viewer with PDF export, zero WebView &nbsp;&#9679;&nbsp;
+      <b>NEW:</b> TechHurts Widgets &mdash; six home-screen widgets (NWS Weather, GOES East, Himawari, Calc, TV Remote, Timer) &nbsp;&#9679;&nbsp;
+      <b>ALSO SERVING:</b> TTS Runner for Android &mdash; on-device Qwen3-TTS and Supertonic 3, no server, no account &nbsp;&#9679;&nbsp;
       <b>REMINDER:</b> Still free. Still no telemetry. Still not tracking you &nbsp;&#9679;&nbsp;
-      <b>ROADMAP:</b> Whatever annoys us next &nbsp;&#9679;&nbsp;
       This site contains zero JavaScript, zero cookies and zero analytics &nbsp;&#9679;&nbsp;
     </marquee>
   </div>
@@ -140,6 +143,8 @@
             <li><a href="software.html">Software Library</a></li>
             <li><a href="vibecoding.html">Vibecoding</a></li>
             <li><a href="ttsrunner.html">TTS Runner for Android</a></li>
+            <li><a href="widgets.html">TechHurts Widgets</a></li>
+            <li><a href="codefile.html">CodeFile for Android</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="manifesto.html">The Manifesto</a></li>
             <li><a href="tokens.html">Buy Me A Cup Of Tokens</a></li>
@@ -161,6 +166,8 @@
         <div class="head">Site News</div>
         <div class="inner">
           <ul>
+            <li><b>CodeFile</b> published<br><span class="stamp">native code &amp; diff viewer</span></li>
+            <li><b>TechHurts Widgets</b><br><span class="stamp">6 widgets, one pack or solo</span></li>
             <li><b>TTS Runner</b> published<br><span class="stamp">on-device TTS for Android</span></li>
             <li><b>Manifesto</b> written<br><span class="stamp">it is four sentences</span></li>
             <li><b>Site launched</b><br><span class="stamp">no JavaScript was harmed</span></li>
@@ -242,8 +249,9 @@
             Nothing about how you use the software leaves your device, ever.</li>
         <li><span class="mark no">&#215;</span><b>No background network access.</b>
             The software talks to the internet only when <em>you</em> press a
-            button that obviously needs it &mdash; downloading a model, fetching
-            a link you shared it. Otherwise the radio stays idle.</li>
+            button or place a widget that obviously needs it &mdash; downloading a
+            model, fetching a satellite frame, opening a link you shared it.
+            Otherwise the radio stays idle.</li>
         <li><span class="mark no">&#215;</span><b>No weird permissions.</b>
             We do not ask for contacts, location, your call log or
             &ldquo;all files&rdquo; and then decline to explain why. Every
@@ -254,8 +262,9 @@
             We cannot sell data we never had a way to collect.</li>
         <li><span class="mark yes">&#10003;</span><b>Your data stays where it was made.</b>
             On TTS Runner, your text and your voice recordings are processed
-            entirely on the phone. No audio is uploaded, because there is no
-            server to upload it to.</li>
+            entirely on the phone. On CodeFile, your source files, diffs and PDFs
+            are rendered locally in Java. No server of ours is involved, because
+            we do not have one.</li>
         <li><span class="mark yes">&#10003;</span><b>You can check.</b>
             The source is public and the network traffic is inspectable. Don't
             take our word for it &mdash; put it behind a firewall and watch it
@@ -264,7 +273,7 @@
 
       <p><a class="btn" href="privacy.html">Read the full privacy page &raquo;</a></p>
 
-      <div class="barhead">Now Serving: TTS Runner for Android</div>
+      <div class="barhead">Now Serving: Three Titles for Android</div>
 
       <div class="product">
         <div class="phead">
@@ -296,6 +305,69 @@
         </div>
       </div>
 
+      <div class="product">
+        <div class="phead">
+          <span>&#9654; TechHurts Widgets &mdash; six home-screen widgets</span>
+          <span class="ver">FREE / OPEN SOURCE</span>
+        </div>
+        <div class="pbody">
+          <div class="shot">
+            <img src="img/widgets-home.png" width="360" height="780"
+                 alt="Weather, calculator and timer widgets on the Android home screen">
+          </div>
+          <div class="ptext">
+            <p>
+              Six home-screen widgets that do their job without ads or GPS tracking:
+              <b>Weather</b> (from <code>weather.gov</code> by zip code), <b>GOES East</b>
+              and <b>Himawari</b> (live geostationary satellite imagery with 24-hour
+              animation loops and MP4/GIF/WebP export), a <b>1&times;1 Calculator</b>,
+              a local Wi-Fi <b>TV Remote</b> (Android TV, Roku, IP Control), and a
+              <b>1&times;1 Countdown Timer</b>. Available as one combined pack or six
+              standalone APKs.
+            </p>
+            <table class="spec">
+              <tr><th>Platform</th><td>Android</td></tr>
+              <tr><th>Network use</th><td>NWS weather, NOAA/CIRA satellite tiles, local LAN TV control. Calculator &amp; Timer use none.</td></tr>
+              <tr><th>Costs</th><td>Nothing, forever</td></tr>
+              <tr><th>Packaging</th><td>All-in-one pack or individual APKs</td></tr>
+            </table>
+            <a class="btn gold" href="https://github.com/maxfridbe/techhurts_widgets/releases">Download APKs &raquo;</a>
+            <a class="btn" href="widgets.html">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="phead">
+          <span>&#9654; CodeFile &mdash; native source code, data &amp; diff viewer</span>
+          <span class="ver">FREE / OPEN SOURCE</span>
+        </div>
+        <div class="pbody">
+          <div class="shot">
+            <img src="img/codefile-code.png" width="360" height="780"
+                 alt="CodeFile showing syntax-highlighted Java source code with the Office-style ribbon">
+          </div>
+          <div class="ptext">
+            <p>
+              Read code, configs, patches and Markdown natively on Android &mdash;
+              <b>zero WebView, zero browser runtime, zero HTML/CSS</b>. Features 68
+              languages (78 TextMate grammars), 14 paired light/dark themes, an
+              Office-style collapsing ribbon for phones, tablets and foldables,
+              expandable JSON/YAML/TOML/XML trees, visual diffs, clipboard language
+              sniffing, public GitHub link opening, and syntax-highlighted PDF export.
+            </p>
+            <table class="spec">
+              <tr><th>Platform</th><td>Android 7.0+ (phones, tablets &amp; foldables)</td></tr>
+              <tr><th>Network use</th><td>Public GitHub links you open, and optional AI snippets you explicitly send.</td></tr>
+              <tr><th>Costs</th><td>Nothing, forever</td></tr>
+              <tr><th>Permissions</th><td><code>INTERNET</code> only &mdash; not even storage permissions</td></tr>
+            </table>
+            <a class="btn gold" href="https://github.com/maxfridbe/android_codefile/releases">Download APK &raquo;</a>
+            <a class="btn" href="codefile.html">Details</a>
+          </div>
+        </div>
+      </div>
+
       <div class="barhead">Vibecoding: the bases underneath</div>
 
       <p>
@@ -309,7 +381,9 @@
         &mdash; a containerised Android build system. Every APK is built inside a
         podman or docker image, so the host never needs a JDK, Gradle or the
         Android SDK, and versioning and signing are handled for you.
-        <a href="ttsrunner.html">TTS Runner</a> was cloned from it.</li>
+        <a href="ttsrunner.html">TTS Runner</a>, <a href="codefile.html">CodeFile</a>
+        and <a href="widgets.html">TechHurts Widgets</a> all use this containerised
+        build model.</li>
         <li><b><a href="https://github.com/maxfridbe/GameBase">GameBase</a></b>
         &mdash; a Bevy starter game in Rust that ships to Linux, Windows, Android
         and the browser from one crate and one Linux machine.
@@ -347,6 +421,8 @@
     <a href="software.html">Software</a> |
     <a href="vibecoding.html">Vibecoding</a> |
     <a href="ttsrunner.html">TTS Runner</a> |
+    <a href="widgets.html">Widgets</a> |
+    <a href="codefile.html">CodeFile</a> |
     <a href="privacy.html">Privacy</a> |
     <a href="manifesto.html">Manifesto</a> |
     <a href="tokens.html">Tokens</a> |

@@ -53,6 +53,8 @@
     <a href="software.html">Software</a>
     <a href="vibecoding.html">Vibecoding</a>
     <a href="ttsrunner.html">TTS Runner</a>
+    <a href="widgets.html">Widgets</a>
+    <a href="codefile.html">CodeFile</a>
     <a href="privacy.html" class="here">Privacy</a>
     <a href="manifesto.html">Manifesto</a>
     <span class="grow"></span>
@@ -80,6 +82,8 @@
             <li><a href="software.html">Software Library</a></li>
             <li><a href="vibecoding.html">Vibecoding</a></li>
             <li><a href="ttsrunner.html">TTS Runner for Android</a></li>
+            <li><a href="widgets.html">TechHurts Widgets</a></li>
+            <li><a href="codefile.html">CodeFile for Android</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="manifesto.html">The Manifesto</a></li>
             <li><a href="tokens.html">Buy Me A Cup Of Tokens</a></li>
@@ -138,30 +142,41 @@
             The most common way an app leaks is a library its authors never audited.</li>
       </ul>
 
-      <div class="barhead">2. The software uses the network only when you press a button</div>
+      <div class="barhead">2. The software uses the network only when you ask it to</div>
 
       <p>
         Software you have installed should work whether or not there is a network,
         and should be silent on it unless you asked for something that obviously
-        needs it. Ours goes online in three situations, all of them started by you:
+        needs it. Across our titles, the radio goes online only in situations started
+        by you:
       </p>
 
       <table class="spec">
         <tr><th>You download a model</th>
-            <td>You choose it in Settings; it is fetched from its publisher (for
-            TTS Runner, Hugging Face). Not started automatically, not pre-fetched.</td></tr>
-        <tr><th>You share a link to be read</th>
-            <td>The app fetches <em>that page</em>, because you asked it to read
-            that page. Nothing else is requested.</td></tr>
-        <tr><th>You turn on local hosting</th>
-            <td>The app serves an API on your own network, to your own devices.
-            It is off by default and connects to nothing of ours.</td></tr>
+            <td>In <a href="ttsrunner.html">TTS Runner</a>, you choose a model in Settings;
+            it is fetched from its publisher (Hugging Face). Not started automatically,
+            not pre-fetched.</td></tr>
+        <tr><th>You share or open a link</th>
+            <td><a href="ttsrunner.html">TTS Runner</a> fetches an article URL you shared to
+            read it aloud. <a href="codefile.html">CodeFile</a> fetches a public
+            <code>raw.githubusercontent.com</code> file when you open a GitHub link. Nothing
+            else is requested.</td></tr>
+        <tr><th>You place a live data widget</th>
+            <td>In <a href="widgets.html">TechHurts Widgets</a>, the Weather widget queries
+            <code>api.weather.gov</code> for the zip code you typed (no GPS), and the GOES East
+            and Himawari widgets fetch public satellite frames from NOAA and CIRA SLIDER.
+            Calculator and Timer never use the network at all.</td></tr>
+        <tr><th>You use local LAN features or optional AI</th>
+            <td><a href="ttsrunner.html">TTS Runner</a>'s local speech API and
+            <a href="widgets.html">TV Remote</a>'s Wi-Fi commands stay on your own LAN.
+            <a href="codefile.html">CodeFile</a>'s optional AI analysis sends only the snippet
+            you preview and explicitly submit to the endpoint you configured.</td></tr>
       </table>
 
       <p>
         Outside of those, the radio stays idle. No update checks, no config pulls,
         no ping to see if you are still alive. Put the phone in aeroplane mode and
-        everything you have already installed still works.
+        everything local keeps working.
       </p>
 
       <div class="barhead">3. No weird permissions, and every one is explained</div>
@@ -176,25 +191,27 @@
 
       <ul class="plist">
         <li><span class="mark yes">&#10003;</span><b>Asked, with a reason:</b> microphone
-            (only while you are recording a reference clip), internet (the three cases
-            above), notifications (the progress notice Android requires for a running
-            job), and access to the specific folder you point us at for saved audio
-            and backups.</li>
-        <li><span class="mark no">&#215;</span><b>Never asked for:</b> contacts, location,
-            call log, SMS, camera, calendar, nearby devices, accessibility services,
-            or unrestricted access to all your files.</li>
+            in <a href="ttsrunner.html">TTS Runner</a> (only while recording a voice-cloning
+            clip), internet (the specific cases above &mdash; and <a href="codefile.html">CodeFile</a>
+            asks for no other permission at all), notifications and exact alarms (for running
+            TTS jobs, satellite widget intervals, and the countdown timer), and scoped access
+            to folders or files you pick via the system document picker.</li>
+        <li><span class="mark no">&#215;</span><b>Never asked for:</b> contacts, GPS location
+            (even our weather widget takes a zip code instead), call log, SMS, camera,
+            calendar, accessibility services, or unrestricted access to all your files.</li>
         <li><span class="mark yes">&#10003;</span><b>Nothing runs in the background you did not start.</b>
-            A foreground service exists only while a job you started is generating,
-            and it shows a notification the whole time.</li>
+            Foreground services exist only while a TTS job is generating or a countdown timer
+            is ticking, and they show a notification the whole time.</li>
       </ul>
 
       <div class="barhead">4. Your content stays on your device</div>
 
       <p>
-        For TTS Runner specifically: the text you want read and the voice recordings
-        you clone from are processed entirely on the phone, by an engine running in
-        the app. No text is uploaded. No audio is uploaded. This is not a promise
-        about how we handle your data on our servers &mdash; it is the stronger
+        In <a href="ttsrunner.html">TTS Runner</a>, the text you want read and the voice
+        recordings you clone from are processed entirely on the phone. In
+        <a href="codefile.html">CodeFile</a>, the source files, diffs, trees and PDFs you
+        view are rendered locally in Java with Android backup disabled. This is not a
+        promise about how we handle your data on our servers &mdash; it is the stronger
         claim that there are no servers, so there is nothing to handle.
       </p>
 
@@ -232,7 +249,7 @@
       </p>
 
       <p style="text-align:center; margin-top:18px;">
-        <a class="btn gold big" href="ttsrunner.html">See it in practice &raquo;</a>
+        <a class="btn gold big" href="software.html">Browse the software &raquo;</a>
         &nbsp;
         <a class="btn big" href="manifesto.html">Read the manifesto &raquo;</a>
       </p>
@@ -245,6 +262,8 @@
     <a href="software.html">Software</a> |
     <a href="vibecoding.html">Vibecoding</a> |
     <a href="ttsrunner.html">TTS Runner</a> |
+    <a href="widgets.html">Widgets</a> |
+    <a href="codefile.html">CodeFile</a> |
     <a href="privacy.html">Privacy</a> |
     <a href="manifesto.html">Manifesto</a> |
     <a href="tokens.html">Tokens</a> |
